@@ -138,6 +138,8 @@ npm run validate        # Run compile + lint + test (full check)
   - Runs full validation (compile + lint + test)
   - Ensures all code is properly typed, linted, and tested before pushing
 
+> Note: If git hooks are not set up automatically after `npm install`, run `npx husky install` once to enable hooks for your clone.
+
 
 ## 🤝 Contributing
 
