@@ -4,7 +4,7 @@
   "description": "TypeScript template with ESLint, Prettier and Jest",
   "main": "lib/index.js",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "echo \"Husky hooks setup skipped (run: npx husky install)\"",
     "dev": "tsc --watch",
     "build": "npm run clean && tsc -b",
     "clean": "rm -rf lib coverage",
@@ -40,7 +40,7 @@
     "husky": "9.1.7",
     "jest": "30.2.0",
     "lint-staged": "16.2.7",
-    "npm-check-updates": "19.1.2",
+    "npm-check-updates": "16.3.24",
     "prettier": "3.7.4",
     "ts-jest": "29.4.6",
     "typescript": "5.9.3"
