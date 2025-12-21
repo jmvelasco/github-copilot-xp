@@ -149,6 +149,11 @@ This template is maintained by [Software Crafters](https://softwarecrafters.io).
 
 MIT © [Softwarecrafters.io](https://softwarecrafters.io)
 
+## 🔶 Known warnings
+
+- You may see deprecation warnings for transitive packages during `npm install` or audits (example: `glob@7.x` and `inflight@1.0.6`). These come from the chain `babel-plugin-istanbul` → `test-exclude@6.x` and are safe to accept for now.
+- Recommended follow-ups: open an upstream issue / PR for `babel-plugin-istanbul` to bump `test-exclude` to v7, or experiment with an `overrides` to force `test-exclude@7.x` and run full tests + coverage to validate.
+
 ---
 
 **Happy Coding!** 🚀
