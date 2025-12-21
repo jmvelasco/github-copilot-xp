@@ -102,3 +102,23 @@ You are jumping too big. Provide a sequence of smaller transformations (TPP) fro
 - Q: Should I enforce this with CI?
   - A: Yes — we added a workflow to validate the manifest on PRs. Consider also adding tests that assert the agent's suggested changes follow rules (manual/automated review).
 
+### Example: how you (or your team) will use it in practice
+- Open Copilot Chat and paste the one-liner:
+Follow `.copilot-workflows/AGENT_BOOTSTRAP.md` and the TDD command tdd.md. Create the first failing test for FEATURE...
+
+- Or use the VS Code snippet that inserts the line automatically as the first line of the chat prompt so you don’t need to type it.
+
+## How to use it (concrete steps) 🔧
+- Insert bootstrap in Copilot Chat (recommended):
+  - Use the VS Code snippet: type copilot-bootstrap and expand, or run:
+    - npm run copy:agent-bootstrap (then paste in Copilot Chat), or
+    - npm run show:agent-bootstrap (prints to stdout for quick copy)
+  - Example first-line to paste in Chat:
+    Follow AGENT_BOOTSTRAP.md and then: Create the first failing test for FEATURE...
+- PR process:
+  - If you used AI, check the PR template box and paste the bootstrap line in the PR description.
+
+## Why this helps
+- Short, high-priority rules are more likely to be honored by Copilot/agents when they appear first in prompts.
+- Autogenerating the bootstrap from alwaysApply: true rules keeps the summary authoritative and up-to-date.
+- The snippet and clipboard helper remove friction for developers.
