@@ -1,0 +1,11 @@
+{
+  "Copilot: Insert Agent Bootstrap": {
+    "prefix": "copilot-bootstrap",
+    "body": [
+      "Follow .copilot-workflows/AGENT_BOOTSTRAP.md and then: $1",
+      "",
+      "$2"
+    ],
+    "description": "Insert single-line bootstrap prompt that makes Copilot follow project agent rules"
+  }
+}

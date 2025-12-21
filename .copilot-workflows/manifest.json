@@ -1,0 +1,9 @@
+{
+  "pairs": [
+    { "command": "tdd.md", "rule": "tdd.mdc" },
+    { "command": "tests.md", "rule": "testing.mdc" },
+    { "command": "refactor.md", "rule": "coding-standards.mdc" },
+    { "command": "rename.md", "rule": "coding-standards.mdc" },
+    { "command": "tpp.md", "rule": "tdd.mdc", "allowDifferentBasename": true }
+  ]
+}
