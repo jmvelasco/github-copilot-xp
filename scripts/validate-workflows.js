@@ -12,7 +12,7 @@ if (!fs.existsSync(manifestPath)) {
 const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 let ok = true;
 
-manifest.pairs.forEach(({ command, rule }) => {
+manifest.pairs.forEach(({ command, rule, allowDifferentBasename }) => {
   const cmd = path.join(base, 'commands', command);
   const rl = path.join(base, 'rules', rule);
 
@@ -28,9 +28,9 @@ manifest.pairs.forEach(({ command, rule }) => {
   const bcmd = path.basename(command, path.extname(command));
   const brule = path.basename(rule, path.extname(rule));
 
-  // Allow coding-standards / testing to be shared rules; warn for others
+  // Allow coding-standards / testing to be shared rules; warn for others unless explicitly allowed
   const sharedRule = ['coding-standards', 'testing'];
-  if (bcmd !== brule && !sharedRule.includes(brule)) {
+  if (bcmd !== brule && !sharedRule.includes(brule) && !allowDifferentBasename) {
     console.warn('SIMILARITY WARNING:', command, '↔', rule);
   }
 });
