@@ -152,7 +152,7 @@ This template is maintained by [Software Crafters](https://softwarecrafters.io).
 
 ### Copilot Workflows
 
-Checkout the full [guide description](.copilot-workflows\README.md) about how to use IA Agent assisted development using copilot.
+Checkout the full [guide description](.copilot-workflows/README.md) about how to use IA Agent assisted development using copilot.
 
 
 ## 📄 License
