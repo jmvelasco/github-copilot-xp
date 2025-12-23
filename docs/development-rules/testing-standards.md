@@ -1,9 +1,3 @@
----
-description: Testing standards with strict no-mocks policy
-globs: ["**/*.test.ts"]
-alwaysApply: false
----
-
 # Testing Standards
 
 ## Naming

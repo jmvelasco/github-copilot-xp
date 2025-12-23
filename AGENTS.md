@@ -1,7 +1,4 @@
----
-alwaysApply: true
----
-# Instructions for Claude - XP Agent (Extreme Programming)
+# Instructions for XP Agent (Extreme Programming)
 
 ## Context
 

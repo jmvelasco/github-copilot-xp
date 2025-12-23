@@ -1,8 +1,3 @@
----
-description: TDD cycle with TPP transformations for the GREEN step
-alwaysApply: true
----
-
 # Test-Driven Development (TDD)
 
 **ALWAYS follow the complete cycle:**

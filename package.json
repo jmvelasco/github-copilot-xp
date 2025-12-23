@@ -24,10 +24,6 @@
     "test:coverage": "jest --coverage",
     "test:ci": "jest --ci --coverage --maxWorkers=2",
     "validate": "npm run compile && npm run lint && npm run test",
-    "validate:workflows": "node scripts/validate-workflows.js",
-    "build:agent-bootstrap": "node scripts/build-agent-bootstrap.js",
-    "show:agent-bootstrap": "node -e \"console.log(require('fs').readFileSync('.copilot-workflows/AGENT_BOOTSTRAP.md','utf8'))\"",
-    "copy:agent-bootstrap": "node scripts/copy-agent-bootstrap.js",
     "upgrade": "ncu -i",
     "upgrade:all": "ncu -u"
   },

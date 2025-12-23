@@ -1,8 +1,3 @@
----
-description: Coding standards for names, functions and classes
-alwaysApply: true
----
-
 # Coding Standards
 
 To maintain code quality, I follow strict standards for names, functions, and classes.
